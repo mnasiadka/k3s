@@ -15,7 +15,7 @@ version = 2
   path = "{{ .NodeConfig.Containerd.Opt }}"
 [plugins."io.containerd.grpc.v1.cri"]
   stream_server_address = "127.0.0.1"
-  stream_server_port = "10010"
+  stream_server_port = "0"
   enable_selinux = {{ .NodeConfig.SELinux }}
   enable_unprivileged_ports = {{ .EnableUnprivileged }}
   enable_unprivileged_icmp = {{ .EnableUnprivileged }}
